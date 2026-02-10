@@ -187,11 +187,11 @@ class AdminController extends UserAwareController
             }
 
             $languages = array_values($languages);
-            usort($languages, function ($left, $right) {
+            usort($languages, static function ($left, $right) {
                 return strcmp($left['name'], $right['name']);
             });
 
-            $objectData['languages'] = array_values($languages);
+            $objectData['languages'] = $languages;
             $objectData['o1key'] = $object1->getKey();
             $objectData['o2key'] = $object2->getKey();
             $objectData['o1id'] = $object1->getId();

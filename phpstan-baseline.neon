@@ -1,2 +1,25 @@
 parameters:
 	ignoreErrors:
+		-
+			message: '#^Method OpenDxp\\Bundle\\ObjectMergerBundle\\Controller\\AdminController\:\:combineKeys\(\) has parameter \$arr1 with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Controller/AdminController.php
+
+		-
+			message: '#^Method OpenDxp\\Bundle\\ObjectMergerBundle\\Controller\\AdminController\:\:combineKeys\(\) has parameter \$arr2 with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Controller/AdminController.php
+
+		-
+			message: '#^Method OpenDxp\\Bundle\\ObjectMergerBundle\\Controller\\AdminController\:\:combineKeys\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Controller/AdminController.php
+
+		-
+			message: '#^Property OpenDxp\\Bundle\\ObjectMergerBundle\\Controller\\AdminController\:\:\$objectData type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Controller/AdminController.php
