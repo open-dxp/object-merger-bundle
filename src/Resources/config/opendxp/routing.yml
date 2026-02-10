@@ -1,0 +1,3 @@
+app:
+    resource: "@OpenDxpObjectMergerBundle/Controller/"
+    type:     attribute

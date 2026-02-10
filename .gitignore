@@ -1,0 +1,21 @@
+.DS_Store
+Thumbs.db
+*.log
+
+# PHP-CS-Fixer
+/.php_cs
+/.php-cs-fixer.cache
+
+# composer
+/composer.lock
+!/vendor
+/vendor/*
+!/vendor/.gitkeep
+
+# PhpStorm / IDEA
+.idea
+.idea_modules
+# NetBeans
+nbproject
+
+node_modules/

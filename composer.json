@@ -1,0 +1,38 @@
+{
+  "name": "open-dxp/object-merger-bundle",
+  "type": "opendxp-bundle",
+  "license": "GPL-3.0-or-later",
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/runtime": true
+    }
+  },
+  "require": {
+    "open-dxp/opendxp": "^1.0"
+  },
+  "require-dev": {
+    "open-dxp/admin-bundle": "^1.0",
+    "phpstan/phpstan": "^2.0",
+    "phpstan/phpstan-symfony": "^2.0",
+    "symfony/dotenv": "^7.4",
+    "symfony/runtime": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "OpenDxp\\Bundle\\ObjectMergerBundle\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "kernel/Kernel.php"
+    ]
+  },
+  "extra": {
+    "opendxp": {
+      "bundles": [
+        "OpenDxp\\Bundle\\ObjectMergerBundle\\OpenDxpObjectMergerBundle"
+      ]
+    }
+  }
+}
