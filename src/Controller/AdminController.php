@@ -153,7 +153,7 @@ class AdminController extends UserAwareController
             }
 
             $items = array_values($dataFromObject1);
-            usort($items, fn($left, $right) => strcmp((string) $left['key'], (string) $right['key']));
+            usort($items, fn ($left, $right) => strcmp((string) $left['key'], (string) $right['key']));
 
             $objectData['items'] = $items;
 
@@ -182,7 +182,7 @@ class AdminController extends UserAwareController
             }
 
             $languages = array_values($languages);
-            usort($languages, static fn($left, $right) => strcmp((string) $left['name'], (string) $right['name']));
+            usort($languages, static fn ($left, $right) => strcmp((string) $left['name'], (string) $right['name']));
 
             $objectData['languages'] = $languages;
             $objectData['o1key'] = $object1->getKey();

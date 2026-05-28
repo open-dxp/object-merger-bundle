@@ -20,6 +20,7 @@ use OpenDxp\Extension\Bundle\AbstractOpenDxpBundle;
 use OpenDxp\Extension\Bundle\OpenDxpBundleAdminClassicInterface;
 use OpenDxp\Extension\Bundle\Traits\BundleAdminClassicTrait;
 use OpenDxp\Extension\Bundle\Traits\PackageVersionTrait;
+use Override;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 class OpenDxpObjectMergerBundle extends AbstractOpenDxpBundle implements OpenDxpBundleAdminClassicInterface
@@ -27,7 +28,7 @@ class OpenDxpObjectMergerBundle extends AbstractOpenDxpBundle implements OpenDxp
     use BundleAdminClassicTrait;
     use PackageVersionTrait;
 
-    #[\Override]
+    #[Override]
     public function getContainerExtension(): ExtensionInterface
     {
         if ($this->extension === null) {
