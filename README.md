@@ -31,7 +31,7 @@ Click on the Compare button to show the difference between the two objects. You 
 
 The first row shows the full path of both objects. Below that all object fields are listed.
 
-There are 6 columns:
+There are six columns:
 
 * The exclamation mark indicates that the field content differs
 * The second column is the field label
@@ -42,17 +42,7 @@ There are 6 columns:
 
 ![Screenshot](doc/diff1.png)
 
-
 Click on save to apply the changes.
-
-### Customizations
-
-The development of the plugin has been discontinued. It has been customized for Kautbullinger where the further development effort was put into. A special requirement for Kautbullinger is that it should be able to show the difference between objects which exist in RAM only, i.e. they haven't been saved before.
-
-In addition it offers two additional features:
-
-* Apply everything at once
-* Show/Hide fields that are equal (defaults to hide)
 
 ***
 
