@@ -36,18 +36,15 @@ class AdminController extends UserAwareController
 {
     use JsonHelperTrait;
 
-    private ?array $objectData;
+    private ?array $objectData = null;
 
-    protected EventDispatcherInterface $eventDispatcher;
-
-    public function __construct(EventDispatcherInterface $eventDispatcher)
+    public function __construct(protected EventDispatcherInterface $eventDispatcher)
     {
-        $this->eventDispatcher = $eventDispatcher;
     }
 
     private function getDiffDataForField(Concrete $object, int | string $key, Data $fielddefinition): void
     {
-        $getter = 'get' . ucfirst($key);
+        $getter = 'get' . ucfirst((string) $key);
 
         $value = $fielddefinition->getDiffDataForEditmode($object->$getter(), $object);
         foreach ($value as $el) {
@@ -156,9 +153,7 @@ class AdminController extends UserAwareController
             }
 
             $items = array_values($dataFromObject1);
-            usort($items, function ($left, $right) {
-                return strcmp($left['key'], $right['key']);
-            });
+            usort($items, fn($left, $right) => strcmp((string) $left['key'], (string) $right['key']));
 
             $objectData['items'] = $items;
 
@@ -187,9 +182,7 @@ class AdminController extends UserAwareController
             }
 
             $languages = array_values($languages);
-            usort($languages, static function ($left, $right) {
-                return strcmp($left['name'], $right['name']);
-            });
+            usort($languages, static fn($left, $right) => strcmp((string) $left['name'], (string) $right['name']));
 
             $objectData['languages'] = $languages;
             $objectData['o1key'] = $object1->getKey();
