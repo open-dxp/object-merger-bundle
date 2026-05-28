@@ -27,6 +27,7 @@ class OpenDxpObjectMergerBundle extends AbstractOpenDxpBundle implements OpenDxp
     use BundleAdminClassicTrait;
     use PackageVersionTrait;
 
+    #[\Override]
     public function getContainerExtension(): ExtensionInterface
     {
         if ($this->extension === null) {
