@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: object-merger-bundle
+    description: Object Merger community bundle provides data comparison and merging
+        UI for OpenDXP data objects.
+spec:
+    type: library
+    lifecycle: production
+    owner: team-opendxp
+    system: opendxp
