@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+- [CHORE] Replace Codeception with Pest and `open-dxp/test-foundation`
+- [CHORE] Require `open-dxp/opendxp` ^1.5
+
 ## 1.0.1
 - [ENHANCEMENT] PHP 8.5 Support added
 
