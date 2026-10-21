@@ -46,6 +46,11 @@ Click on save to apply the changes.
 
 ***
 
+## Changelog
+Before updating, please [check the changelog!](CHANGELOG.md)
+
+Coming from an earlier package? Read [Migrating to OpenDXP](doc/Migrating_to_OpenDXP.md).
+
 ## Upstream Origin & Version Transparency
 This project is a fork of the [Pimcore object-merger (685231e / v4.1.0)](https://github.com/pimcore/object-merger/tree/685231eb6198eb3b764903bcdba4c7b3d26a605e), which is © Pimcore GmbH and licensed under GPLv3.
 
